@@ -1,0 +1,17 @@
+package com.example.java;
+
+public class BigDecimalMain { 
+	
+	public static void main(String[] args) {
+		
+		double value = 0.012;
+		double pSum = value + value + value;
+		System.out.println(pSum);
+		
+		String strValue = Double.toString(value);
+		BigDecimal bigValue = new BigDecimal(strValue);
+		BigDecimal bSum = bigValue.add(bigValue).add(bigValue);
+		
+		System.out.println(bSum.toString());
+	}
+}
