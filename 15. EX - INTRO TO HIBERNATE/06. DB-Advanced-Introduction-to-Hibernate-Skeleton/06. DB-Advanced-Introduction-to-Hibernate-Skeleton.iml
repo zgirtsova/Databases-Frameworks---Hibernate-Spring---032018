@@ -7,6 +7,7 @@
         <setting name="provider-name" value="" />
         <datasource-mapping>
           <factory-entry name="PersistenceUnit" value="c0c99487-9d90-4f49-a7f2-a0fc0ff1255e" />
+          <factory-entry name="soft_uni" value="e5a82e94-ae6e-4d21-8552-06cf6e360bc2" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>

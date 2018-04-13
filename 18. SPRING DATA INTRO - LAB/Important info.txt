@@ -1,0 +1,10 @@
+1. DAO - Data Access Object, което се нарича Repository, това са всички методи, които правят нещо - findAll, 
+findOne, findById.
+
+
+1. Всички методи, които ги имаме в repository interface-a, 
+трябва да ги имаме и в Service Interface и да ги имплементираме после.
+Repository interface-a са методи, които са само някакви SELECT заявки, 
+докато в Student Interface вече влизат в действие с Entity Manager-a и транзакциите и за това
+трябва да ги имаме същите тези методи, които там сме си ги дефинирали и трябва да направим още една имплементация
+ - Service Implementation
