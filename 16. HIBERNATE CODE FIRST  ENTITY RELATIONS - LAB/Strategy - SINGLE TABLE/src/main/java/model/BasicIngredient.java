@@ -10,8 +10,8 @@ import java.math.BigDecimal;
 public abstract class BasicIngredient {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Basic
