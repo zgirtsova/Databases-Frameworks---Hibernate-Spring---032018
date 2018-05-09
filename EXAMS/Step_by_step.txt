@@ -34,6 +34,13 @@ public class CameraServiceImpl implements CameraService {
 6. DTO - зависят от това как ще комуникираме с базата. Правим файл с константи за пътищата към различните
 файлове. Копираме буквално всички фийлдове от ентитито и гледаме в json дали съответстват. Името на всеки
 фийлд в dto-то трябав да съответства на това от Json.
+2:20 - importJSON file is presented
+
+race entryi, race nqmat kolona s koqto da se identifrizirat - za towa id. трябва рейс ентри преди рейс да се
+импортне. ентритата се пълнят в рейса.
+експорт - 
+xml race entries -вътре са double, а не integers, както е указано
+на DTO-то слагам NotNull
 
 
 

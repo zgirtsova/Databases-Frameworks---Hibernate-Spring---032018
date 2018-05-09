@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="most_wanted_db@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="most_wanted_db">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bank"/>
+    <schema id="4" parent="1" name="blog"/>
+    <schema id="5" parent="1" name="bookshop_db"/>
+    <schema id="6" parent="1" name="book_library"/>
+    <schema id="7" parent="1" name="camp"/>
+    <schema id="8" parent="1" name="cars"/>
+    <schema id="9" parent="1" name="diablo"/>
+    <schema id="10" parent="1" name="exam"/>
+    <schema id="11" parent="1" name="gamebar"/>
+    <schema id="12" parent="1" name="geography"/>
+    <schema id="13" parent="1" name="gringotts"/>
+    <schema id="14" parent="1" name="hospital"/>
+    <schema id="15" parent="1" name="information_schema"/>
+    <schema id="16" parent="1" name="minionsdb"/>
+    <schema id="17" parent="1" name="minions_db"/>
+    <schema id="18" parent="1" name="modelmapper"/>
+    <schema id="19" parent="1" name="mysql"/>
+    <schema id="20" parent="1" name="neck_and_allbows"/>
+    <schema id="21" parent="1" name="orders"/>
+    <schema id="22" parent="1" name="performance_schema"/>
+    <schema id="23" parent="1" name="persons"/>
+    <schema id="24" parent="1" name="photography"/>
+    <schema id="25" parent="1" name="phpmyadmin"/>
+    <schema id="26" parent="1" name="projectrider"/>
+    <schema id="27" parent="1" name="projectriderjava"/>
+    <schema id="28" parent="1" name="report_service"/>
+    <schema id="29" parent="1" name="restaurant"/>
+    <schema id="30" parent="1" name="school"/>
+    <schema id="31" parent="1" name="shampoosingletable"/>
+    <schema id="32" parent="1" name="shampoo_company"/>
+    <schema id="33" parent="1" name="soft_uni"/>
+    <schema id="34" parent="1" name="spring"/>
+    <table id="35" parent="2" name="cars"/>
+    <table id="36" parent="2" name="districts"/>
+    <table id="37" parent="2" name="race_entries"/>
+    <table id="38" parent="2" name="racers"/>
+    <table id="39" parent="2" name="races"/>
+    <table id="40" parent="2" name="towns"/>
+    <column id="41" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="42" parent="35" name="brand">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="35" name="max_speed">
+      <Position>3</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="44" parent="35" name="model">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="35" name="price">
+      <Position>5</Position>
+      <DataType>decimal(19,2)|0</DataType>
+    </column>
+    <column id="46" parent="35" name="year_of_production">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="35" name="zero_to_sixty">
+      <Position>7</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="48" parent="35" name="racer">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="49" parent="35" name="FK641op6i8shes3k4lhxi6ko02b">
+      <ColNames>racer</ColNames>
+    </index>
+    <key id="50" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="51" parent="35" name="FK641op6i8shes3k4lhxi6ko02b">
+      <ColNames>racer</ColNames>
+      <RefSchemaName>most_wanted_db</RefSchemaName>
+      <RefTableName>racers</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="52" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="53" parent="36" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="36" name="town">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="55" parent="36" name="FK7y4bgdufqayvdlmmubnsnyrbn">
+      <ColNames>town</ColNames>
+    </index>
+    <key id="56" parent="36" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="57" parent="36" name="FK7y4bgdufqayvdlmmubnsnyrbn">
+      <ColNames>town</ColNames>
+      <RefSchemaName>most_wanted_db</RefSchemaName>
+      <RefTableName>towns</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="58" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="59" parent="37" name="finish_time">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="60" parent="37" name="has_finished">
+      <Position>3</Position>
+      <DataType>bit(1)|0</DataType>
+    </column>
+    <column id="61" parent="37" name="car">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="62" parent="37" name="racer">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="63" parent="37" name="FKb9wmiplx65lbju3pgvad9pe9x">
+      <ColNames>car</ColNames>
+    </index>
+    <index id="64" parent="37" name="FKk6y7cpf1agpb2kq4puoc8j0gn">
+      <ColNames>racer</ColNames>
+    </index>
+    <key id="65" parent="37" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="66" parent="37" name="FKb9wmiplx65lbju3pgvad9pe9x">
+      <ColNames>car</ColNames>
+      <RefSchemaName>most_wanted_db</RefSchemaName>
+      <RefTableName>cars</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="67" parent="37" name="FKk6y7cpf1agpb2kq4puoc8j0gn">
+      <ColNames>racer</ColNames>
+      <RefSchemaName>most_wanted_db</RefSchemaName>
+      <RefTableName>racers</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="68" parent="38" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="69" parent="38" name="age">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="70" parent="38" name="bounty">
+      <Position>3</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="71" parent="38" name="name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="38" name="home_town">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="73" parent="38" name="FKqliv5ub46bojkl01kinquj6qx">
+      <ColNames>home_town</ColNames>
+    </index>
+    <key id="74" parent="38" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="75" parent="38" name="FKqliv5ub46bojkl01kinquj6qx">
+      <ColNames>home_town</ColNames>
+      <RefSchemaName>most_wanted_db</RefSchemaName>
+      <RefTableName>towns</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="76" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="77" parent="39" name="laps">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="78" parent="39" name="district">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="79" parent="39" name="FKb8kq37bj345nsruu55e9eswa">
+      <ColNames>district</ColNames>
+    </index>
+    <key id="80" parent="39" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="81" parent="39" name="FKb8kq37bj345nsruu55e9eswa">
+      <ColNames>district</ColNames>
+      <RefSchemaName>most_wanted_db</RefSchemaName>
+      <RefTableName>districts</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="82" parent="40" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="83" parent="40" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="84" parent="40" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
