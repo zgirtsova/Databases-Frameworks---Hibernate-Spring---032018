@@ -1,4 +1,4 @@
-package P11_Online_Radio_Database.exceptions;
+package pr_11_online_radio_database.exceptions;
 
 public class InvalidSongException extends Exception {
 }
